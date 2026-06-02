@@ -20,21 +20,17 @@
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
+
+    cursor.style.left = `${mouseX}px`;
+    cursor.style.top = `${mouseY}px`;
+
     cursorDot.style.left = `${mouseX}px`;
     cursorDot.style.top = `${mouseY}px`;
+
     cursor.classList.add('visible');
     cursorDot.classList.add('visible');
   });
 
-  // Smooth cursor follow
-  function animateCursor() {
-    cursorX += (mouseX - cursorX) * 0.12;
-    cursorY += (mouseY - cursorY) * 0.12;
-    cursor.style.left = `${cursorX}px`;
-    cursor.style.top = `${cursorY}px`;
-    requestAnimationFrame(animateCursor);
-  }
-  animateCursor();
 
   // Hover effect on interactive elements
   const interactives = document.querySelectorAll('a, button, input, textarea, [data-hover]');
