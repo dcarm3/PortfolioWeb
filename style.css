@@ -984,7 +984,17 @@ a.contact-item__value:hover {
     gap: 2.8rem;
   }
 
+  /* FOTO PRIMEIRO NO MOBILE */
+  .hero__photo-wrap {
+    order: 1;
+    justify-self: center;
+    width: 260px;
+    height: 260px;
+  }
+
+  /* NOME/TEXTO DEPOIS */
   .hero__content {
+    order: 2;
     max-width: 100%;
   }
 
@@ -1000,10 +1010,11 @@ a.contact-item__value:hover {
 
   .hero__cta {
     justify-content: center;
+    margin-bottom: 3rem;
   }
 
   .hero__scroll {
-    left: 1.5rem;
+    display: none;
   }
 
   .sobre__grid {
