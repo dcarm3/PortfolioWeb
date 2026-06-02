@@ -128,6 +128,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3rem;
+  width: 100%;
   transition: background var(--transition), padding var(--transition);
 }
 
@@ -1039,6 +1040,22 @@ a.contact-item__value:hover {
 
   .section {
     padding: 5rem 0;
+  }
+
+  .nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav.scrolled {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__menu-btn {
+    display: flex;
   }
 }
 
